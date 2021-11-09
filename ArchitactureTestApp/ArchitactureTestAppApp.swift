@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct ArchitactureTestAppApp: App {
+    @StateObject var navigation: Navigation = Navigation(container: Container())
 
     var body: some Scene {
         WindowGroup {
-            HomeScene(homeObservableObject: HomeObservableObject(globalState: GlobalState()))
+            RootView()
+                .environmentObject(navigation)
         }
     }
 }

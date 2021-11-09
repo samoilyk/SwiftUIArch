@@ -15,16 +15,19 @@
 		851045E8273A8902009D4C03 /* UserNameResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045E7273A8902009D4C03 /* UserNameResource.swift */; };
 		851045EA273A8917009D4C03 /* AlarmNameResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045E9273A8917009D4C03 /* AlarmNameResource.swift */; };
 		851045EC273A892E009D4C03 /* HomeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045EB273A892E009D4C03 /* HomeResource.swift */; };
-		851045EF273A9A35009D4C03 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045EE273A9A35009D4C03 /* NetworkService.swift */; };
-		851045F1273A9F25009D4C03 /* SceneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045F0273A9F25009D4C03 /* SceneState.swift */; };
+		851045EF273A9A35009D4C03 /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045EE273A9A35009D4C03 /* NetworkResource.swift */; };
+		851045F1273A9F25009D4C03 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851045F0273A9F25009D4C03 /* LoadingState.swift */; };
 		8556184327397A310095E62F /* ArchitactureTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556184227397A310095E62F /* ArchitactureTestAppApp.swift */; };
-		8556184527397A310095E62F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556184427397A310095E62F /* ContentView.swift */; };
 		8556184727397A380095E62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8556184627397A380095E62F /* Assets.xcassets */; };
 		8556184A27397A380095E62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8556184927397A380095E62F /* Preview Assets.xcassets */; };
 		8556185627397AD30095E62F /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185527397AD30095E62F /* HomeScene.swift */; };
 		8556185B27397BB70095E62F /* UserNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185A27397BB70095E62F /* UserNameScene.swift */; };
 		8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185C27397BC70095E62F /* AlarmNameScene.swift */; };
 		8556185F27397BD50095E62F /* AlarmAddressScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185E27397BD50095E62F /* AlarmAddressScene.swift */; };
+		8584465A273AB32A0012BF2C /* BaseObservableResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85844659273AB32A0012BF2C /* BaseObservableResource.swift */; };
+		8584465C273AB3B50012BF2C /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465B273AB3B50012BF2C /* Container.swift */; };
+		8584465E273AB3E50012BF2C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465D273AB3E50012BF2C /* Navigation.swift */; };
+		85844660273AB9320012BF2C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465F273AB9320012BF2C /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,17 +39,20 @@
 		851045E7273A8902009D4C03 /* UserNameResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameResource.swift; sourceTree = "<group>"; };
 		851045E9273A8917009D4C03 /* AlarmNameResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNameResource.swift; sourceTree = "<group>"; };
 		851045EB273A892E009D4C03 /* HomeResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResource.swift; sourceTree = "<group>"; };
-		851045EE273A9A35009D4C03 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		851045F0273A9F25009D4C03 /* SceneState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneState.swift; sourceTree = "<group>"; };
+		851045EE273A9A35009D4C03 /* NetworkResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResource.swift; sourceTree = "<group>"; };
+		851045F0273A9F25009D4C03 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		8556183F27397A310095E62F /* ArchitactureTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitactureTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8556184227397A310095E62F /* ArchitactureTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitactureTestAppApp.swift; sourceTree = "<group>"; };
-		8556184427397A310095E62F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8556184627397A380095E62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8556184927397A380095E62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8556185527397AD30095E62F /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		8556185A27397BB70095E62F /* UserNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameScene.swift; sourceTree = "<group>"; };
 		8556185C27397BC70095E62F /* AlarmNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNameScene.swift; sourceTree = "<group>"; };
 		8556185E27397BD50095E62F /* AlarmAddressScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddressScene.swift; sourceTree = "<group>"; };
+		85844659273AB32A0012BF2C /* BaseObservableResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableResource.swift; sourceTree = "<group>"; };
+		8584465B273AB3B50012BF2C /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		8584465D273AB3E50012BF2C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		8584465F273AB9320012BF2C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				851045DD273A7F8A009D4C03 /* GlobalState.swift */,
-				851045F0273A9F25009D4C03 /* SceneState.swift */,
+				851045F0273A9F25009D4C03 /* LoadingState.swift */,
+				85844659273AB32A0012BF2C /* BaseObservableResource.swift */,
+				8584465B273AB3B50012BF2C /* Container.swift */,
+				8584465D273AB3E50012BF2C /* Navigation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -72,7 +81,7 @@
 		851045ED273A9A27009D4C03 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				851045EE273A9A35009D4C03 /* NetworkService.swift */,
+				851045EE273A9A35009D4C03 /* NetworkResource.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -100,7 +109,7 @@
 				851045DC273A7F77009D4C03 /* Model */,
 				8556185427397A970095E62F /* Scenes */,
 				8556184227397A310095E62F /* ArchitactureTestAppApp.swift */,
-				8556184427397A310095E62F /* ContentView.swift */,
+				8584465F273AB9320012BF2C /* RootView.swift */,
 				8556184627397A380095E62F /* Assets.xcassets */,
 				8556184827397A380095E62F /* Preview Content */,
 			);
@@ -241,16 +250,19 @@
 				851045E2273A828D009D4C03 /* UserNameObservableObject.swift in Sources */,
 				8556185F27397BD50095E62F /* AlarmAddressScene.swift in Sources */,
 				851045E0273A827E009D4C03 /* HomeObservableObject.swift in Sources */,
+				85844660273AB9320012BF2C /* RootView.swift in Sources */,
 				851045EC273A892E009D4C03 /* HomeResource.swift in Sources */,
 				8556185627397AD30095E62F /* HomeScene.swift in Sources */,
 				851045E6273A82B7009D4C03 /* AlarmAddressObservableObject.swift in Sources */,
-				8556184527397A310095E62F /* ContentView.swift in Sources */,
-				851045F1273A9F25009D4C03 /* SceneState.swift in Sources */,
-				851045EF273A9A35009D4C03 /* NetworkService.swift in Sources */,
+				851045F1273A9F25009D4C03 /* LoadingState.swift in Sources */,
+				851045EF273A9A35009D4C03 /* NetworkResource.swift in Sources */,
 				851045EA273A8917009D4C03 /* AlarmNameResource.swift in Sources */,
 				8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */,
 				851045DE273A7F8A009D4C03 /* GlobalState.swift in Sources */,
 				8556184327397A310095E62F /* ArchitactureTestAppApp.swift in Sources */,
+				8584465E273AB3E50012BF2C /* Navigation.swift in Sources */,
+				8584465A273AB32A0012BF2C /* BaseObservableResource.swift in Sources */,
+				8584465C273AB3B50012BF2C /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

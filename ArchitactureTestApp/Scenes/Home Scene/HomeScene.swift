@@ -7,13 +7,20 @@
 
 import SwiftUI
 
+struct HomeViewModel: Equatable {
+    let userName: String
+    let alarmName: String
+    let alarmAddress: String
+}
+
 struct HomeScene: View {
     @StateObject var homeObservableObject: HomeObservableObject
+    @EnvironmentObject var navigation: Navigation
 
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("User Name",destination: UserNameScene(userNameObservableObject: UserNameObservableObject(state: homeObservableObject.globalState, resource: ProductionUserNameResource(networkService: NetworkService()))))
+                NavigationLink("User Name", destination: navigation.userNameScene)
                 NavigationLink("Alarm Name", destination: AlarmNameScene())
                 NavigationLink("Alarm Address", destination: AlarmAddressScene())
             }
@@ -24,6 +31,6 @@ struct HomeScene: View {
 
 struct HomeScene_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScene(homeObservableObject: HomeObservableObject(globalState: GlobalState()))
+        HomeScene(homeObservableObject: HomeObservableObject(state: GlobalState(), resource: ProductionHomeResource(networkResource: NetworkResource())))
     }
 }

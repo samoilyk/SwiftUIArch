@@ -12,18 +12,13 @@ protocol UserNameResource {
 }
 
 struct ProductionUserNameResource: UserNameResource {
-    private var networkService: NetworkService
+    private var networkResource: NetworkResource
 
-    init(networkService: NetworkService) {
-        self.networkService = networkService
+    init(networkResource: NetworkResource) {
+        self.networkResource = networkResource
     }
 
     func changeUserName(to newValue: String) async -> Result<String, Error> {
-        do {
-            let name = try await networkService.executeMutation(mutation: newValue)
-            return .success(name)
-        } catch {
-            return .failure(error)
-        }
+        await networkResource.executeMutation(mutation: newValue)
     }
 }

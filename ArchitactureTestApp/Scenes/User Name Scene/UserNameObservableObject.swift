@@ -7,35 +7,32 @@
 
 import Foundation
 
-struct UserNameViewModel: Equatable {
-    let userName: String
-}
+final class UserNameObservableObject: BaseObservableObject {
+    @Published private(set) var sceneViewModel: UserNameViewModel?
 
-final class UserNameObservableObject: ObservableObject {
-    @Published var sceneState: SceneState<UserNameViewModel>
-
-    private var state: GlobalState
     private let resource: UserNameResource
 
     init(state: GlobalState, resource: UserNameResource) {
-        self.state = state
         self.resource = resource
+        super.init(state: state)
 
-        state.subject
-            .compactMap { $0.userName.flatMap(UserNameViewModel.init) }
+        self.state.subject
+            .map { $0.userName.flatMap(UserNameViewModel.init) }
             .removeDuplicates()
-            .map { SceneState.hasData($0) }
-            .assign(to: &$sceneState)
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$sceneViewModel)
     }
 
     func userNamedChanged(to newValue: String) {
         Task {
+            changeLoadingState(to: .isLoading)
             let result = await resource.changeUserName(to: newValue)
             switch result {
             case .success(let newName):
                 state.value.userName = newName
+                changeLoadingState(to: .success)
             case .failure(let error):
-                sceneState = .error(error)
+                changeLoadingState(to: .error(error))
             }
         }
     }
