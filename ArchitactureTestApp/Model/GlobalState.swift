@@ -10,21 +10,21 @@ import Foundation
 
 
 final class GlobalState {
-    struct AlarmState {
+    struct Model {
         var userName: String?
         var alarmName: String?
         var alarmAddress: String?
     }
 
-    var value: AlarmState {
+    var value: Model {
         didSet {
             subject.send(value)
         }
     }
 
     init() {
-        self.value = AlarmState()
+        self.value = Model()
     }
 
-    lazy var subject: CurrentValueSubject<AlarmState, Never> = CurrentValueSubject(value)
+    lazy var subject: CurrentValueSubject<Model, Never> = CurrentValueSubject(value)
 }

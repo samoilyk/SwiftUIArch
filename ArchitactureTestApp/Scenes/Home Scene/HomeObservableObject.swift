@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 final class HomeObservableObject: BaseObservableObject {
-    @Published private(set) var sceneViewModel: HomeViewModel?
+    @Published private(set) var sceneData: HomeSceneData?
 
     private let resource: HomeResource
 
@@ -26,11 +26,11 @@ final class HomeObservableObject: BaseObservableObject {
                           return nil
                       }
 
-                return HomeViewModel(userName: userName, alarmName: alarmName, alarmAddress: alarmAddrees)
+                return HomeSceneData(userName: userName, alarmName: alarmName, alarmAddress: alarmAddrees)
             }
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
-            .assign(to: &$sceneViewModel)
+            .assign(to: &$sceneData)
 
     }
 

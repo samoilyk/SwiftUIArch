@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeNavigation {
     enum Sheet: Int, Identifiable, View {
         case settings
+        case logout
 
         var id: Int {
             rawValue
@@ -19,6 +20,8 @@ struct HomeNavigation {
             switch self {
             case .settings:
                 SettingsScene()
+            case .logout:
+                EmptyView()
             }
         }
     }

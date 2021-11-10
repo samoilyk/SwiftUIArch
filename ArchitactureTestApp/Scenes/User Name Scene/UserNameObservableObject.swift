@@ -8,7 +8,7 @@
 import Foundation
 
 final class UserNameObservableObject: BaseObservableObject {
-    @Published private(set) var sceneViewModel: UserNameViewModel?
+    @Published private(set) var sceneData: UserNameSceneData?
 
     private let resource: UserNameResource
 
@@ -17,10 +17,10 @@ final class UserNameObservableObject: BaseObservableObject {
         super.init(state: state)
 
         self.state.subject
-            .map { $0.userName.flatMap(UserNameViewModel.init) }
+            .map { $0.userName.flatMap(UserNameSceneData.init) }
             .removeDuplicates()
             .receive(on: DispatchQueue.main)
-            .assign(to: &$sceneViewModel)
+            .assign(to: &$sceneData)
     }
 
     func userNamedChanged(to newValue: String) {

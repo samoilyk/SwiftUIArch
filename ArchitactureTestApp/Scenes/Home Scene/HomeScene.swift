@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeViewModel: Equatable {
+struct HomeSceneData: Equatable {
     let userName: String
     let alarmName: String
     let alarmAddress: String
@@ -21,16 +21,16 @@ struct HomeScene: View {
         NavigationView {
             List {
                 HStack {
-                    Button("User Name", action: { navigation.homeNavigation.link = .userName })
-                    Text(homeObservableObject.sceneViewModel?.userName ?? "")
+                    Button("User Name", action: userNameButtonTapped)
+                    Text(homeObservableObject.sceneData?.userName ?? "")
                 }
                 HStack {
                     Button("Alarm Name", action: { navigation.homeNavigation.link = .alarmName })
-                    Text(homeObservableObject.sceneViewModel?.alarmName ?? "")
+                    Text(homeObservableObject.sceneData?.alarmName ?? "")
                 }
                 HStack {
                     Button("Alarm Address", action: { navigation.homeNavigation.link = .alarmAddress })
-                    Text(homeObservableObject.sceneViewModel?.alarmAddress ?? "")
+                    Text(homeObservableObject.sceneData?.alarmAddress ?? "")
                 }
             }
             .onAppear(perform: homeObservableObject.onAppear)
@@ -55,6 +55,10 @@ struct HomeScene: View {
                 $0.environmentObject(navigation)
             }
         }
+    }
+
+    func userNameButtonTapped() {
+        navigation.homeNavigation.link = .userName
     }
 }
 

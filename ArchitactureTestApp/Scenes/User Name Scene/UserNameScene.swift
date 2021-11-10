@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserNameViewModel: Equatable {
+struct UserNameSceneData: Equatable {
     let userName: String
 }
 
@@ -18,7 +18,7 @@ struct UserNameScene: View {
     var body: some View {
         switch userNameObservableObject.loadingState {
         case .success:
-            if let initialUserName = userNameObservableObject.sceneViewModel?.userName {
+            if let initialUserName = userNameObservableObject.sceneData?.userName {
                 VStack {
                     Text("User's name: \(initialUserName)")
                     TextField("Enter new user's name", text: $userName)

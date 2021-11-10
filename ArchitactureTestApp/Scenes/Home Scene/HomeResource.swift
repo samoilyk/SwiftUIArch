@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol HomeResource {
-    func loadData() async -> Result<GlobalState.AlarmState, Error>
+    func loadData() async -> Result<GlobalState.Model, Error>
 }
 
 struct ProductionHomeResource: HomeResource {
@@ -19,7 +19,7 @@ struct ProductionHomeResource: HomeResource {
         self.networkResource = networkResource
     }
 
-    func loadData() async -> Result<GlobalState.AlarmState, Error> {
-        await networkResource.executeMutation(mutation: GlobalState.AlarmState(userName: "Initial User Name", alarmName: "Initial Alarm Name", alarmAddress: "Initial Alarm Address"))
+    func loadData() async -> Result<GlobalState.Model, Error> {
+        await networkResource.executeMutation(mutation: GlobalState.Model(userName: "Initial User Name", alarmName: "Initial Alarm Name", alarmAddress: "Initial Alarm Address"))
     }
 }
