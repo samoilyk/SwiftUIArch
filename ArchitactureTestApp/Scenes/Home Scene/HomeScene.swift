@@ -20,11 +20,16 @@ struct HomeScene: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink("User Name", destination: navigation.userNameScene)
-                NavigationLink("Alarm Name", destination: AlarmNameScene())
-                NavigationLink("Alarm Address", destination: AlarmAddressScene())
+                HStack {
+                    NavigationLink("User Name", destination: navigation.userNameScene)
+                    Spacer()
+                    Text(homeObservableObject.sceneViewModel?.userName ?? "")
+                }
+                NavigationLink("Alarm Name", destination: navigation.alarmNameScene)
+                NavigationLink("Alarm Address", destination: navigation.alarmAddressScene)
             }
         }
+        .onAppear(perform: homeObservableObject.onAppear)
         .navigationTitle("Home Scene")
     }
 }

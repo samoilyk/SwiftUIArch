@@ -28,6 +28,7 @@
 		8584465C273AB3B50012BF2C /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465B273AB3B50012BF2C /* Container.swift */; };
 		8584465E273AB3E50012BF2C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465D273AB3E50012BF2C /* Navigation.swift */; };
 		85844660273AB9320012BF2C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465F273AB9320012BF2C /* RootView.swift */; };
+		8587366F273BAA7100B649C8 /* HomeNavvigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587366E273BAA7100B649C8 /* HomeNavvigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		8584465B273AB3B50012BF2C /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		8584465D273AB3E50012BF2C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		8584465F273AB9320012BF2C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8587366E273BAA7100B649C8 /* HomeNavvigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavvigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8556185527397AD30095E62F /* HomeScene.swift */,
+				8587366E273BAA7100B649C8 /* HomeNavvigation.swift */,
 				851045DF273A827E009D4C03 /* HomeObservableObject.swift */,
 				851045EB273A892E009D4C03 /* HomeResource.swift */,
 			);
@@ -259,6 +262,7 @@
 				851045EA273A8917009D4C03 /* AlarmNameResource.swift in Sources */,
 				8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */,
 				851045DE273A7F8A009D4C03 /* GlobalState.swift in Sources */,
+				8587366F273BAA7100B649C8 /* HomeNavvigation.swift in Sources */,
 				8556184327397A310095E62F /* ArchitactureTestAppApp.swift in Sources */,
 				8584465E273AB3E50012BF2C /* Navigation.swift in Sources */,
 				8584465A273AB32A0012BF2C /* BaseObservableResource.swift in Sources */,

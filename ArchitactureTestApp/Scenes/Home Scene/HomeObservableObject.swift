@@ -33,4 +33,21 @@ final class HomeObservableObject: BaseObservableObject {
             .assign(to: &$sceneViewModel)
 
     }
+
+    func onAppear() {
+        Task {
+            let result = await resource.loadData()
+            switch result {
+            case .success(let newData):
+                var state = state.value
+                state.userName = newData.userName
+                state.alarmName = newData.alarmName
+                state.alarmAddress = newData.alarmAddress
+                self.state.value = state
+            case .failure:
+                // show error
+                break
+            }
+        }
+    }
 }

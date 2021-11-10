@@ -18,8 +18,8 @@ struct UserNameScene: View {
     var body: some View {
         switch userNameObservableObject.loadingState {
         case .success:
-            if let userName = userNameObservableObject.sceneViewModel?.userName {
-                Text("User's name: \(userName)")
+            if let initialUserName = userNameObservableObject.sceneViewModel?.userName {
+                Text("User's name: \(initialUserName)")
                 TextField("Enter new user's name", text: $userName)
                     .onSubmit { userNameObservableObject.userNamedChanged(to: userName) }
             } else {
