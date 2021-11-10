@@ -51,9 +51,6 @@ struct HomeScene: View {
                     selection: $navigation.homeNavigation.link
                 )
             }
-            .sheet(item: $navigation.homeNavigation.sheet) {
-                $0.environmentObject(navigation)
-            }
         }
     }
 
