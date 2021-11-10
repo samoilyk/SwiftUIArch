@@ -19,13 +19,17 @@ struct UserNameScene: View {
         switch userNameObservableObject.loadingState {
         case .success:
             if let initialUserName = userNameObservableObject.sceneViewModel?.userName {
-                Text("User's name: \(initialUserName)")
-                TextField("Enter new user's name", text: $userName)
-                    .onSubmit { userNameObservableObject.userNamedChanged(to: userName) }
+                VStack {
+                    Text("User's name: \(initialUserName)")
+                    TextField("Enter new user's name", text: $userName)
+                        .onSubmit { userNameObservableObject.userNamedChanged(to: userName) }
+                }
             } else {
-                Text("No data")
-                TextField("Enter new user's name", text: $userName)
-                    .onSubmit { userNameObservableObject.userNamedChanged(to: userName) }
+                VStack {
+                    Text("No data")
+                    TextField("Enter new user's name", text: $userName)
+                        .onSubmit { userNameObservableObject.userNamedChanged(to: userName) }
+                }
             }
 
         case .error(let error):

@@ -24,11 +24,17 @@
 		8556185B27397BB70095E62F /* UserNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185A27397BB70095E62F /* UserNameScene.swift */; };
 		8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185C27397BC70095E62F /* AlarmNameScene.swift */; };
 		8556185F27397BD50095E62F /* AlarmAddressScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185E27397BD50095E62F /* AlarmAddressScene.swift */; };
-		8584465A273AB32A0012BF2C /* BaseObservableResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85844659273AB32A0012BF2C /* BaseObservableResource.swift */; };
+		8584465A273AB32A0012BF2C /* BaseObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85844659273AB32A0012BF2C /* BaseObservableObject.swift */; };
 		8584465C273AB3B50012BF2C /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465B273AB3B50012BF2C /* Container.swift */; };
-		8584465E273AB3E50012BF2C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465D273AB3E50012BF2C /* Navigation.swift */; };
+		8584465E273AB3E50012BF2C /* NavigationObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465D273AB3E50012BF2C /* NavigationObservableObject.swift */; };
 		85844660273AB9320012BF2C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465F273AB9320012BF2C /* RootView.swift */; };
-		8587366F273BAA7100B649C8 /* HomeNavvigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587366E273BAA7100B649C8 /* HomeNavvigation.swift */; };
+		8587366F273BAA7100B649C8 /* HomeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587366E273BAA7100B649C8 /* HomeNavigation.swift */; };
+		85873672273BB45400B649C8 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873671273BB45400B649C8 /* SettingsScene.swift */; };
+		85873674273BB47500B649C8 /* SettingsObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873673273BB47500B649C8 /* SettingsObservableObject.swift */; };
+		85873676273BB48500B649C8 /* SettingsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873675273BB48500B649C8 /* SettingsResource.swift */; };
+		85873678273BB49300B649C8 /* SettingsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873677273BB49300B649C8 /* SettingsNavigation.swift */; };
+		8587367A273BB5CE00B649C8 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873679273BB5CE00B649C8 /* AlertModel.swift */; };
+		8587367C273BBC3500B649C8 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587367B273BBC3500B649C8 /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,11 +56,17 @@
 		8556185A27397BB70095E62F /* UserNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameScene.swift; sourceTree = "<group>"; };
 		8556185C27397BC70095E62F /* AlarmNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNameScene.swift; sourceTree = "<group>"; };
 		8556185E27397BD50095E62F /* AlarmAddressScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddressScene.swift; sourceTree = "<group>"; };
-		85844659273AB32A0012BF2C /* BaseObservableResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableResource.swift; sourceTree = "<group>"; };
+		85844659273AB32A0012BF2C /* BaseObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableObject.swift; sourceTree = "<group>"; };
 		8584465B273AB3B50012BF2C /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		8584465D273AB3E50012BF2C /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		8584465D273AB3E50012BF2C /* NavigationObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationObservableObject.swift; sourceTree = "<group>"; };
 		8584465F273AB9320012BF2C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		8587366E273BAA7100B649C8 /* HomeNavvigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavvigation.swift; sourceTree = "<group>"; };
+		8587366E273BAA7100B649C8 /* HomeNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigation.swift; sourceTree = "<group>"; };
+		85873671273BB45400B649C8 /* SettingsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
+		85873673273BB47500B649C8 /* SettingsObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObservableObject.swift; sourceTree = "<group>"; };
+		85873675273BB48500B649C8 /* SettingsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsResource.swift; sourceTree = "<group>"; };
+		85873677273BB49300B649C8 /* SettingsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigation.swift; sourceTree = "<group>"; };
+		85873679273BB5CE00B649C8 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		8587367B273BBC3500B649C8 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +85,11 @@
 			children = (
 				851045DD273A7F8A009D4C03 /* GlobalState.swift */,
 				851045F0273A9F25009D4C03 /* LoadingState.swift */,
-				85844659273AB32A0012BF2C /* BaseObservableResource.swift */,
+				85844659273AB32A0012BF2C /* BaseObservableObject.swift */,
 				8584465B273AB3B50012BF2C /* Container.swift */,
-				8584465D273AB3E50012BF2C /* Navigation.swift */,
+				8584465D273AB3E50012BF2C /* NavigationObservableObject.swift */,
+				8587367B273BBC3500B649C8 /* Navigation.swift */,
+				85873679273BB5CE00B649C8 /* AlertModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				8556185527397AD30095E62F /* HomeScene.swift */,
-				8587366E273BAA7100B649C8 /* HomeNavvigation.swift */,
+				8587366E273BAA7100B649C8 /* HomeNavigation.swift */,
 				851045DF273A827E009D4C03 /* HomeObservableObject.swift */,
 				851045EB273A892E009D4C03 /* HomeResource.swift */,
 			);
@@ -140,6 +154,7 @@
 		8556185427397A970095E62F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				85873670273BB43C00B649C8 /* Settings Scene (modal) */,
 				8556185927397AF00095E62F /* Alarm Address Scene */,
 				8556185827397AE40095E62F /* Alarm Name Scene */,
 				8556185727397ADC0095E62F /* User Name Scene */,
@@ -175,6 +190,17 @@
 				851045E5273A82B7009D4C03 /* AlarmAddressObservableObject.swift */,
 			);
 			path = "Alarm Address Scene";
+			sourceTree = "<group>";
+		};
+		85873670273BB43C00B649C8 /* Settings Scene (modal) */ = {
+			isa = PBXGroup;
+			children = (
+				85873671273BB45400B649C8 /* SettingsScene.swift */,
+				85873673273BB47500B649C8 /* SettingsObservableObject.swift */,
+				85873675273BB48500B649C8 /* SettingsResource.swift */,
+				85873677273BB49300B649C8 /* SettingsNavigation.swift */,
+			);
+			path = "Settings Scene (modal)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,17 +281,23 @@
 				851045E0273A827E009D4C03 /* HomeObservableObject.swift in Sources */,
 				85844660273AB9320012BF2C /* RootView.swift in Sources */,
 				851045EC273A892E009D4C03 /* HomeResource.swift in Sources */,
+				8587367A273BB5CE00B649C8 /* AlertModel.swift in Sources */,
+				8587367C273BBC3500B649C8 /* Navigation.swift in Sources */,
 				8556185627397AD30095E62F /* HomeScene.swift in Sources */,
 				851045E6273A82B7009D4C03 /* AlarmAddressObservableObject.swift in Sources */,
 				851045F1273A9F25009D4C03 /* LoadingState.swift in Sources */,
 				851045EF273A9A35009D4C03 /* NetworkResource.swift in Sources */,
+				85873674273BB47500B649C8 /* SettingsObservableObject.swift in Sources */,
 				851045EA273A8917009D4C03 /* AlarmNameResource.swift in Sources */,
 				8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */,
 				851045DE273A7F8A009D4C03 /* GlobalState.swift in Sources */,
-				8587366F273BAA7100B649C8 /* HomeNavvigation.swift in Sources */,
+				85873672273BB45400B649C8 /* SettingsScene.swift in Sources */,
+				8587366F273BAA7100B649C8 /* HomeNavigation.swift in Sources */,
+				85873676273BB48500B649C8 /* SettingsResource.swift in Sources */,
 				8556184327397A310095E62F /* ArchitactureTestAppApp.swift in Sources */,
-				8584465E273AB3E50012BF2C /* Navigation.swift in Sources */,
-				8584465A273AB32A0012BF2C /* BaseObservableResource.swift in Sources */,
+				85873678273BB49300B649C8 /* SettingsNavigation.swift in Sources */,
+				8584465E273AB3E50012BF2C /* NavigationObservableObject.swift in Sources */,
+				8584465A273AB32A0012BF2C /* BaseObservableObject.swift in Sources */,
 				8584465C273AB3B50012BF2C /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

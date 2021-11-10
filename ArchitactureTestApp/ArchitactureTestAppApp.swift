@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct ArchitactureTestAppApp: App {
-    @StateObject var navigation: Navigation = Navigation(container: Container())
+    @StateObject var navigation: NavigationObservableObject = NavigationObservableObject(container: Container())
 
     var body: some Scene {
         WindowGroup {

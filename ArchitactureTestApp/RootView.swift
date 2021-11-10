@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var navigation: Navigation
+    @EnvironmentObject var navigation: NavigationObservableObject
 
     var body: some View {
         navigation.homeScene

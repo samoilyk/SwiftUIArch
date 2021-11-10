@@ -15,22 +15,46 @@ struct HomeViewModel: Equatable {
 
 struct HomeScene: View {
     @StateObject var homeObservableObject: HomeObservableObject
-    @EnvironmentObject var navigation: Navigation
+    @EnvironmentObject var navigation: NavigationObservableObject
 
     var body: some View {
         NavigationView {
             List {
                 HStack {
-                    NavigationLink("User Name", destination: navigation.userNameScene)
-                    Spacer()
+                    Button("User Name", action: { navigation.homeNavigation.link = .userName })
                     Text(homeObservableObject.sceneViewModel?.userName ?? "")
                 }
-                NavigationLink("Alarm Name", destination: navigation.alarmNameScene)
-                NavigationLink("Alarm Address", destination: navigation.alarmAddressScene)
+                HStack {
+                    Button("Alarm Name", action: { navigation.homeNavigation.link = .alarmName })
+                    Text(homeObservableObject.sceneViewModel?.alarmName ?? "")
+                }
+                HStack {
+                    Button("Alarm Address", action: { navigation.homeNavigation.link = .alarmAddress })
+                    Text(homeObservableObject.sceneViewModel?.alarmAddress ?? "")
+                }
+            }
+            .onAppear(perform: homeObservableObject.onAppear)
+            .navigationTitle("Home Scene")
+            .navigationTo {
+                HomeNavigation.Link.userName.link(
+                    to: navigation.userNameScene,
+                    selection: $navigation.homeNavigation.link
+                )
+
+                HomeNavigation.Link.alarmName.link(
+                    to: navigation.alarmNameScene,
+                    selection: $navigation.homeNavigation.link
+                )
+
+                HomeNavigation.Link.alarmAddress.link(
+                    to: navigation.alarmAddressScene,
+                    selection: $navigation.homeNavigation.link
+                )
+            }
+            .sheet(item: $navigation.homeNavigation.sheet) {
+                $0.environmentObject(navigation)
             }
         }
-        .onAppear(perform: homeObservableObject.onAppear)
-        .navigationTitle("Home Scene")
     }
 }
 
