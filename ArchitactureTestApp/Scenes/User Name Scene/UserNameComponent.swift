@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct UserNameSceneData: Equatable {
+struct UserNameData: Equatable {
     let userName: String
 }
 
-struct UserNameScene: View {
+struct UserNameComponent: View {
     @StateObject var userNameObservableObject: UserNameObservableObject
     @State private var userName: String = ""
 
     var body: some View {
         switch userNameObservableObject.loadingState {
         case .success:
-            if let initialUserName = userNameObservableObject.sceneData?.userName {
+            if let initialUserName = userNameObservableObject.componentData?.userName {
                 VStack {
                     Text("User's name: \(initialUserName)")
                     TextField("Enter new user's name", text: $userName)
@@ -42,6 +42,6 @@ struct UserNameScene: View {
 
 struct UserNameScene_Previews: PreviewProvider {
     static var previews: some View {
-        UserNameScene(userNameObservableObject: UserNameObservableObject(state: GlobalState(), resource: ProductionUserNameResource(networkResource: NetworkResource())))
+        UserNameComponent(userNameObservableObject: UserNameObservableObject(state: GlobalState(), resource: ProductionUserNameResource(networkResource: NetworkResource())))
     }
 }

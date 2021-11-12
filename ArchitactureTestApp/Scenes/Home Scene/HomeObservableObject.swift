@@ -15,7 +15,6 @@ final class HomeObservableObject: BaseObservableObject {
 
     init(state: GlobalState, resource: HomeResource) {
         self.resource = resource
-
         super.init(state: state)
 
         self.state.subject

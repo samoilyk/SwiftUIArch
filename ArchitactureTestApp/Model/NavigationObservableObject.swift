@@ -26,12 +26,12 @@ final class NavigationObservableObject: ObservableObject {
         return HomeScene(homeObservableObject: homeObservableObject)
     }
 
-    var userNameScene: UserNameScene {
+    var userNameScene: UserNameComponent {
         let userNameObservableObject = UserNameObservableObject(
             state: container.globalState,
             resource: ProductionUserNameResource(networkResource: container.networkResource)
         )
-        return UserNameScene(userNameObservableObject: userNameObservableObject)
+        return UserNameComponent(userNameObservableObject: userNameObservableObject)
     }
 
     var alarmNameScene: AlarmNameScene {

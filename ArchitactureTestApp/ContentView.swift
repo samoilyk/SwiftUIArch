@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RootView: View {
+struct ContentView: View {
     @EnvironmentObject var navigation: NavigationObservableObject
 
     var body: some View {
@@ -17,6 +17,6 @@ struct RootView: View {
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView()
+        ContentView()
     }
 }

@@ -21,13 +21,13 @@
 		8556184727397A380095E62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8556184627397A380095E62F /* Assets.xcassets */; };
 		8556184A27397A380095E62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8556184927397A380095E62F /* Preview Assets.xcassets */; };
 		8556185627397AD30095E62F /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185527397AD30095E62F /* HomeScene.swift */; };
-		8556185B27397BB70095E62F /* UserNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185A27397BB70095E62F /* UserNameScene.swift */; };
+		8556185B27397BB70095E62F /* UserNameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185A27397BB70095E62F /* UserNameComponent.swift */; };
 		8556185D27397BC70095E62F /* AlarmNameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185C27397BC70095E62F /* AlarmNameScene.swift */; };
 		8556185F27397BD50095E62F /* AlarmAddressScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8556185E27397BD50095E62F /* AlarmAddressScene.swift */; };
 		8584465A273AB32A0012BF2C /* BaseObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85844659273AB32A0012BF2C /* BaseObservableObject.swift */; };
 		8584465C273AB3B50012BF2C /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465B273AB3B50012BF2C /* Container.swift */; };
 		8584465E273AB3E50012BF2C /* NavigationObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465D273AB3E50012BF2C /* NavigationObservableObject.swift */; };
-		85844660273AB9320012BF2C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465F273AB9320012BF2C /* RootView.swift */; };
+		85844660273AB9320012BF2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8584465F273AB9320012BF2C /* ContentView.swift */; };
 		8587366F273BAA7100B649C8 /* HomeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587366E273BAA7100B649C8 /* HomeNavigation.swift */; };
 		85873672273BB45400B649C8 /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873671273BB45400B649C8 /* SettingsScene.swift */; };
 		85873674273BB47500B649C8 /* SettingsObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873673273BB47500B649C8 /* SettingsObservableObject.swift */; };
@@ -53,13 +53,13 @@
 		8556184627397A380095E62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8556184927397A380095E62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8556185527397AD30095E62F /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
-		8556185A27397BB70095E62F /* UserNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameScene.swift; sourceTree = "<group>"; };
+		8556185A27397BB70095E62F /* UserNameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameComponent.swift; sourceTree = "<group>"; };
 		8556185C27397BC70095E62F /* AlarmNameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmNameScene.swift; sourceTree = "<group>"; };
 		8556185E27397BD50095E62F /* AlarmAddressScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddressScene.swift; sourceTree = "<group>"; };
 		85844659273AB32A0012BF2C /* BaseObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObservableObject.swift; sourceTree = "<group>"; };
 		8584465B273AB3B50012BF2C /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		8584465D273AB3E50012BF2C /* NavigationObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationObservableObject.swift; sourceTree = "<group>"; };
-		8584465F273AB9320012BF2C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8584465F273AB9320012BF2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8587366E273BAA7100B649C8 /* HomeNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigation.swift; sourceTree = "<group>"; };
 		85873671273BB45400B649C8 /* SettingsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
 		85873673273BB47500B649C8 /* SettingsObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObservableObject.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				851045DC273A7F77009D4C03 /* Model */,
 				8556185427397A970095E62F /* Scenes */,
 				8556184227397A310095E62F /* ArchitactureTestAppApp.swift */,
-				8584465F273AB9320012BF2C /* RootView.swift */,
+				8584465F273AB9320012BF2C /* ContentView.swift */,
 				8556184627397A380095E62F /* Assets.xcassets */,
 				8556184827397A380095E62F /* Preview Content */,
 			);
@@ -166,7 +166,7 @@
 		8556185727397ADC0095E62F /* User Name Scene */ = {
 			isa = PBXGroup;
 			children = (
-				8556185A27397BB70095E62F /* UserNameScene.swift */,
+				8556185A27397BB70095E62F /* UserNameComponent.swift */,
 				851045E1273A828D009D4C03 /* UserNameObservableObject.swift */,
 				851045E7273A8902009D4C03 /* UserNameResource.swift */,
 			);
@@ -275,11 +275,11 @@
 			files = (
 				851045E4273A82A5009D4C03 /* AlarmNameObservableObject.swift in Sources */,
 				851045E8273A8902009D4C03 /* UserNameResource.swift in Sources */,
-				8556185B27397BB70095E62F /* UserNameScene.swift in Sources */,
+				8556185B27397BB70095E62F /* UserNameComponent.swift in Sources */,
 				851045E2273A828D009D4C03 /* UserNameObservableObject.swift in Sources */,
 				8556185F27397BD50095E62F /* AlarmAddressScene.swift in Sources */,
 				851045E0273A827E009D4C03 /* HomeObservableObject.swift in Sources */,
-				85844660273AB9320012BF2C /* RootView.swift in Sources */,
+				85844660273AB9320012BF2C /* ContentView.swift in Sources */,
 				851045EC273A892E009D4C03 /* HomeResource.swift in Sources */,
 				8587367A273BB5CE00B649C8 /* AlertModel.swift in Sources */,
 				8587367C273BBC3500B649C8 /* Navigation.swift in Sources */,
